@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Hammad Sajjad — Embedded Systems & Electronics Engineer</title>
 <meta name="description" content="Embedded Systems & Electronics Engineer specializing in firmware, PCB design, microcontrollers, and industrial automation. Based in Lahore, Pakistan.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,6 @@
     overflow-x: hidden;
   }
 
-  /* ─── NAV ─── */
   header {
     position: fixed;
     width: 100%;
@@ -60,65 +59,20 @@
     margin: 0 auto;
   }
 
-  .nav-brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-  }
-
+  .nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
   .nav-logo {
-    width: 34px; height: 34px;
-    background: var(--accent);
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: white;
-    font-weight: 500;
-    letter-spacing: 0.02em;
+    width: 34px; height: 34px; background: var(--accent); display: flex; align-items: center;
+    justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 11px;
+    color: white; font-weight: 500; letter-spacing: 0.02em;
   }
-
-  .nav-name {
-    font-family: 'Fraunces', serif;
-    font-size: 17px;
-    color: var(--text);
-    font-weight: 500;
-    letter-spacing: -0.01em;
-  }
-
-  nav ul {
-    display: flex;
-    gap: 28px;
-    list-style: none;
-    align-items: center;
-  }
-
-  nav a {
-    color: var(--muted);
-    text-decoration: none;
-    font-size: 13px;
-    font-family: 'IBM Plex Mono', monospace;
-    letter-spacing: 0.04em;
-    transition: color 0.2s;
-  }
-
+  .nav-name { font-family: 'Fraunces', serif; font-size: 17px; color: var(--text); font-weight: 500; letter-spacing: -0.01em; }
+  nav ul { display: flex; gap: 28px; list-style: none; align-items: center; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 13px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em; transition: color 0.2s; }
   nav a:hover { color: var(--accent); }
+  .nav-cta { padding: 7px 18px; background: var(--accent); color: white !important; font-size: 12px !important; border-radius: 2px; transition: background 0.2s !important; }
+  .nav-cta:hover { background: var(--accent2) !important; }
 
-  .nav-cta {
-    padding: 7px 18px;
-    background: var(--accent);
-    color: white !important;
-    font-size: 12px !important;
-    border-radius: 2px;
-    transition: background 0.2s !important;
-  }
-  .nav-cta:hover { background: var(--accent2) !important; color: white !important; }
-
-  /* ─── LAYOUT ─── */
   .container { max-width: 1280px; margin: 0 auto; padding: 0 7%; }
-  section { position: relative; }
-
-  /* ─── HERO ─── */
   .hero {
     min-height: 100vh;
     display: grid;
@@ -129,1713 +83,389 @@
     margin: 0 auto;
     gap: 80px;
   }
-
-  .hero-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--accent);
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding: 5px 12px;
-    background: var(--accent-light);
-    border: 1px solid var(--accent-mid);
-    border-radius: 2px;
-  }
-
-  .hero h1 {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(40px, 4.5vw, 64px);
-    line-height: 1.06;
-    color: var(--text);
-    letter-spacing: -0.02em;
-    font-weight: 500;
-    margin-bottom: 14px;
-  }
-
+  .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--accent); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px; padding: 5px 12px; background: var(--accent-light); border: 1px solid var(--accent-mid); border-radius: 2px; }
+  .hero h1 { font-family: 'Fraunces', serif; font-size: clamp(40px, 4.5vw, 64px); line-height: 1.06; color: var(--text); letter-spacing: -0.02em; font-weight: 500; margin-bottom: 14px; }
   .hero h1 em { font-style: italic; color: var(--accent); font-weight: 300; }
-
-  .hero-sub {
-    font-size: 16px;
-    color: var(--text2);
-    max-width: 500px;
-    margin-bottom: 36px;
-    line-height: 1.85;
-    font-weight: 300;
-  }
-
+  .hero-sub { font-size: 16px; color: var(--text2); max-width: 500px; margin-bottom: 36px; line-height: 1.85; font-weight: 300; }
   .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-
-  .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 26px;
-    background: var(--accent);
-    color: white;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 2px;
-    transition: background 0.2s, transform 0.15s;
-    border: none;
-    cursor: pointer;
-  }
+  .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 26px; background: var(--accent); color: white; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; font-weight: 500; border-radius: 2px; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; }
   .btn-primary:hover { background: var(--accent2); transform: translateY(-1px); }
+  .btn-outline { display: inline-flex; align-items: center; gap: 8px; padding: 12px 26px; border: 1.5px solid var(--border-dark); color: var(--text2); font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: border-color 0.2s, color 0.2s; }
+  .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
-  .btn-outline {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 26px;
-    border: 1.5px solid var(--border-dark);
-    color: var(--text2);
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 2px;
-    transition: border-color 0.2s, color 0.2s, transform 0.15s;
-  }
-  .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
-
-  /* Hero right panel */
-  .hero-panel {
-    border: 1px solid var(--border-dark);
-    background: var(--white);
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 4px 24px rgba(26,79,160,0.07), 0 1px 4px rgba(0,0,0,0.04);
-  }
-
-  .hero-panel-header {
-    background: var(--accent);
-    padding: 14px 22px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
+  .hero-panel { border: 1px solid var(--border-dark); background: var(--white); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 24px rgba(26,79,160,0.07); }
+  .hero-panel-header { background: var(--accent); padding: 14px 22px; display: flex; align-items: center; gap: 10px; }
   .panel-dots { display: flex; gap: 6px; }
   .panel-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.35); }
-
-  .panel-header-title {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: rgba(255,255,255,0.8);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-left: 4px;
-  }
-
-  .hero-panel-body { padding: 0; }
-
-  .status-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 13px 22px;
-    border-bottom: 1px solid var(--border);
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-  }
-  .status-row:last-child { border-bottom: none; }
-  .status-key { color: var(--muted); letter-spacing: 0.04em; }
-  .status-val { color: var(--text); font-weight: 400; }
-
-  .status-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    color: var(--success);
-    font-size: 12px;
-    background: var(--success-bg);
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-family: 'IBM Plex Mono', monospace;
-  }
-
-  .status-dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: #22c55e;
-    animation: pulse-dot 2s infinite;
-  }
-
-  @keyframes pulse-dot {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.4; }
-  }
-
-  .hero-stat-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    border-top: 1px solid var(--border);
-  }
-
-  .hero-stat {
-    padding: 18px 22px;
-    text-align: center;
-    border-right: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-  }
+  .panel-header-title { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.8); letter-spacing: 0.1em; text-transform: uppercase; }
+  .status-row { display: flex; justify-content: space-between; align-items: center; padding: 13px 22px; border-bottom: 1px solid var(--border); font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
+  .status-badge { display: inline-flex; align-items: center; gap: 7px; color: var(--success); font-size: 12px; background: var(--success-bg); padding: 3px 10px; border-radius: 20px; }
+  .status-dot { width: 6px; height: 6px; border-radius: 50%; background: #22c55e; animation: pulse-dot 2s infinite; }
+  @keyframes pulse-dot { 0%,100%{opacity:1;} 50%{opacity:0.4;} }
+  .hero-stat-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--border); }
+  .hero-stat { padding: 18px 22px; text-align: center; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .hero-stat:nth-child(even) { border-right: none; }
-  .hero-stat:nth-child(3), .hero-stat:nth-child(4) { border-bottom: none; }
+  .hero-stat-num { font-family: 'Fraunces', serif; font-size: 28px; color: var(--accent); line-height: 1; font-weight: 500; }
+  .hero-stat-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.07em; text-transform: uppercase; }
 
-  .hero-stat-num {
-    font-family: 'Fraunces', serif;
-    font-size: 28px;
-    color: var(--accent);
-    line-height: 1;
-    margin-bottom: 4px;
-    font-weight: 500;
-  }
-
-  .hero-stat-label {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: var(--muted);
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-  }
-
-  /* ─── SECTION HEADER ─── */
   .section-wrap { max-width: 1280px; margin: 0 auto; padding: 0 7%; }
-
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    margin-bottom: 52px;
-  }
-
-  .section-tag {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: var(--accent);
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    border: 1px solid var(--accent-mid);
-    padding: 4px 10px;
-    background: var(--accent-light);
-    white-space: nowrap;
-    border-radius: 2px;
-  }
-
-  .section-title {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(26px, 3vw, 38px);
-    color: var(--text);
-    line-height: 1.1;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-  }
-
+  .section-header { display: flex; align-items: center; gap: 18px; margin-bottom: 52px; flex-wrap: wrap; }
+  .section-tag { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--accent); letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid var(--accent-mid); padding: 4px 10px; background: var(--accent-light); white-space: nowrap; border-radius: 2px; }
+  .section-title { font-family: 'Fraunces', serif; font-size: clamp(26px, 3vw, 38px); color: var(--text); font-weight: 500; letter-spacing: -0.01em; }
   .section-line { flex: 1; height: 1px; background: var(--border); }
 
-  /* ─── ABOUT ─── */
-  #about {
-    padding: 110px 0;
-    background: var(--white);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    align-items: start;
-  }
-
-  /* ── PROFILE PICTURE ── */
-  .profile-picture-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 28px;
-  }
-
-  .profile-picture-container {
-    position: relative;
-    width: 140px;
-    height: 140px;
-    cursor: pointer;
-  }
-
-  .profile-picture-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--accent);
-    display: none;
-  }
-
-  .profile-picture-placeholder {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    background: var(--accent-light);
-    border: 3px dashed var(--accent-mid);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    cursor: pointer;
-    transition: border-color 0.2s, background 0.2s;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .profile-picture-placeholder:hover {
-    border-color: var(--accent);
-    background: #dce8f5;
-  }
-
-  .profile-picture-placeholder svg {
-    width: 32px; height: 32px;
-    color: var(--accent);
-    opacity: 0.7;
-  }
-
-  .profile-picture-placeholder span {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: var(--accent);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.4;
-    padding: 0 10px;
-  }
-
-  .profile-upload-btn {
-    position: absolute;
-    bottom: 4px;
-    right: 4px;
-    width: 32px; height: 32px;
-    background: var(--accent);
-    border-radius: 50%;
-    border: 2px solid white;
-    display: flex; align-items: center; justify-content: center;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.15s;
-    box-shadow: 0 2px 8px rgba(26,79,160,0.3);
-    z-index: 2;
-  }
-
-  .profile-upload-btn:hover { background: var(--accent2); transform: scale(1.1); }
+  #about { padding: 110px 0; background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: start; }
+  .profile-picture-wrap { display: flex; flex-direction: column; align-items: center; gap: 16px; margin-bottom: 28px; }
+  .profile-picture-container { position: relative; width: 140px; height: 140px; cursor: pointer; }
+  .profile-picture-img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); display: block; }
+  .profile-picture-placeholder { width: 140px; height: 140px; border-radius: 50%; background: var(--accent-light); border: 3px dashed var(--accent-mid); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; cursor: pointer; transition: border-color 0.2s; }
+  .profile-picture-placeholder svg { width: 32px; height: 32px; color: var(--accent); opacity: 0.7; }
+  .profile-upload-btn { position: absolute; bottom: 4px; right: 4px; width: 32px; height: 32px; background: var(--accent); border-radius: 50%; border: 2px solid white; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.2s; box-shadow: 0 2px 8px rgba(26,79,160,0.3); }
+  .profile-upload-btn:hover { background: var(--accent2); }
   .profile-upload-btn svg { width: 14px; height: 14px; color: white; }
-
-  .profile-name-badge {
-    font-family: 'Fraunces', serif;
-    font-size: 16px;
-    color: var(--text);
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: -0.01em;
-  }
-
-  .profile-role-badge {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: var(--accent);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-align: center;
-    background: var(--accent-light);
-    border: 1px solid var(--accent-mid);
-    padding: 4px 12px;
-    border-radius: 20px;
-  }
-
+  .profile-name-badge { font-family: 'Fraunces', serif; font-size: 16px; color: var(--text); font-weight: 500; text-align: center; }
+  .profile-role-badge { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--accent); text-transform: uppercase; background: var(--accent-light); border: 1px solid var(--accent-mid); padding: 4px 12px; border-radius: 20px; }
   #profile-input { display: none; }
-
-  .about-text p {
-    color: var(--text2);
-    font-size: 15.5px;
-    font-weight: 300;
-    line-height: 1.9;
-    margin-bottom: 18px;
-  }
-
-  .about-text p strong { color: var(--text); font-weight: 600; }
-
-  .about-callout {
-    border-left: 3px solid var(--accent);
-    padding: 14px 18px;
-    background: var(--accent-light);
-    margin: 24px 0;
-    color: var(--accent);
-    font-size: 15px;
-    font-weight: 400;
-    border-radius: 0 3px 3px 0;
-  }
-
-  .about-right-col { display: flex; flex-direction: column; gap: 24px; }
-
-  .about-info {
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  }
-
-  .about-info-row {
-    display: flex;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    border-bottom: 1px solid var(--border);
-  }
-  .about-info-row:last-child { border-bottom: none; }
-
-  .about-info-key {
-    width: 130px;
-    flex-shrink: 0;
-    padding: 13px 16px;
-    color: var(--muted);
-    border-right: 1px solid var(--border);
-    background: var(--bg2);
-    letter-spacing: 0.04em;
-  }
-
-  .about-info-val {
-    padding: 13px 16px;
-    color: var(--text2);
-    background: var(--white);
-  }
-
+  .about-text p { color: var(--text2); font-size: 15.5px; font-weight: 300; line-height: 1.9; margin-bottom: 18px; }
+  .about-callout { border-left: 3px solid var(--accent); padding: 14px 18px; background: var(--accent-light); margin: 24px 0; color: var(--accent); border-radius: 0 3px 3px 0; }
+  .about-info { border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+  .about-info-row { display: flex; font-family: 'IBM Plex Mono', monospace; font-size: 12px; border-bottom: 1px solid var(--border); }
+  .about-info-key { width: 130px; flex-shrink: 0; padding: 13px 16px; color: var(--muted); border-right: 1px solid var(--border); background: var(--bg2); }
+  .about-info-val { padding: 13px 16px; color: var(--text2); background: var(--white); }
   .about-info-val a { color: var(--accent); text-decoration: none; }
-  .about-info-val a:hover { text-decoration: underline; }
 
-  /* ─── SKILLS ─── */
   #skills { padding: 110px 0; background: var(--bg); }
-
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-    gap: 16px;
-  }
-
-  .skill-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 26px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s, opacity 0.5s;
-    opacity: 0;
-    transform: translateY(18px);
-  }
-
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
+  .skill-card { background: var(--white); border: 1px solid var(--border); border-radius: 4px; padding: 26px 24px; transition: all 0.2s; opacity: 0; transform: translateY(18px); }
   .skill-card.show { opacity: 1; transform: translateY(0); }
+  .skill-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .skill-icon-wrap { width: 38px; height: 38px; background: var(--accent-light); border: 1px solid var(--accent-mid); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+  .skill-name { font-family: 'Fraunces', serif; font-size: 17px; font-weight: 500; }
+  .skill-desc { font-size: 13px; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 12px; border-top: 1px solid var(--border); }
+  .skill-tag { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--accent); border: 1px solid var(--accent-mid); background: var(--accent-light); padding: 3px 9px; border-radius: 2px; }
 
-  .skill-card:hover {
-    border-color: var(--accent-mid);
-    box-shadow: 0 6px 24px rgba(26,79,160,0.08);
-    transform: translateY(-2px);
-  }
-
-  .skill-header { display: flex; align-items: center; gap: 12px; }
-
-  .skill-icon-wrap {
-    width: 38px; height: 38px;
-    background: var(--accent-light);
-    border: 1px solid var(--accent-mid);
-    border-radius: 4px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 18px;
-    flex-shrink: 0;
-  }
-
-  .skill-name { font-family: 'Fraunces', serif; font-size: 17px; color: var(--text); font-weight: 500; }
-
-  .skill-desc { font-size: 13px; color: var(--muted); line-height: 1.7; font-weight: 300; }
-
-  .skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 2px;
-    padding-top: 12px;
-    border-top: 1px solid var(--border);
-  }
-
-  .skill-tag {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: var(--accent);
-    border: 1px solid var(--accent-mid);
-    background: var(--accent-light);
-    padding: 3px 9px;
-    letter-spacing: 0.04em;
-    border-radius: 2px;
-  }
-
-  /* ─── EXPERIENCE ─── */
-  #experience {
-    padding: 110px 0;
-    background: var(--white);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .timeline {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 148px;
-    top: 0; bottom: 0;
-    width: 1px;
-    background: var(--border);
-  }
-
-  .timeline-entry {
-    display: grid;
-    grid-template-columns: 148px 1fr;
-    gap: 0;
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 0.5s, transform 0.5s;
-  }
-
+  #experience { padding: 110px 0; background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .timeline { position: relative; display: flex; flex-direction: column; gap: 0; }
+  .timeline::before { content: ''; position: absolute; left: 148px; top: 0; bottom: 0; width: 1px; background: var(--border); }
+  .timeline-entry { display: grid; grid-template-columns: 148px 1fr; opacity: 0; transform: translateY(16px); transition: all 0.5s; }
   .timeline-entry.show { opacity: 1; transform: translateY(0); }
+  .timeline-date { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--muted); padding: 32px 20px 32px 0; text-align: right; }
+  .timeline-body { padding: 22px 0 30px 36px; border-bottom: 1px solid var(--border); position: relative; }
+  .timeline-body::before { content: ''; position: absolute; left: -5px; top: 32px; width: 10px; height: 10px; border: 2px solid var(--accent); background: var(--white); border-radius: 50%; }
+  .timeline-role { font-family: 'Fraunces', serif; font-size: 19px; font-weight: 500; margin-bottom: 3px; }
+  .timeline-company { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--accent); text-transform: uppercase; margin-bottom: 12px; }
+  .timeline-desc { color: var(--text2); font-size: 14px; font-weight: 300; max-width: 600px; }
+  .tl-tag { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--accent); border: 1px solid var(--accent-mid); background: var(--accent-light); padding: 3px 9px; border-radius: 2px; display: inline-block; margin-right: 6px; margin-top: 8px; }
 
-  .timeline-date {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 0.04em;
-    padding: 32px 20px 32px 0;
-    text-align: right;
-    padding-top: 34px;
-  }
-
-  .timeline-body {
-    padding: 22px 0 30px 36px;
-    border-bottom: 1px solid var(--border);
-    position: relative;
-  }
-
-  .timeline-body::before {
-    content: '';
-    position: absolute;
-    left: -5px;
-    top: 32px;
-    width: 10px; height: 10px;
-    border: 2px solid var(--accent);
-    background: var(--white);
-    border-radius: 50%;
-  }
-
-  .timeline-entry:last-child .timeline-body { border-bottom: none; }
-
-  .timeline-role {
-    font-family: 'Fraunces', serif;
-    font-size: 19px;
-    color: var(--text);
-    margin-bottom: 3px;
-    font-weight: 500;
-  }
-
-  .timeline-company {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--accent);
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-  }
-
-  .timeline-desc {
-    color: var(--text2);
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.85;
-    max-width: 600px;
-  }
-
-  .timeline-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
-
-  .tl-tag {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: var(--accent);
-    border: 1px solid var(--accent-mid);
-    background: var(--accent-light);
-    padding: 3px 9px;
-    letter-spacing: 0.04em;
-    border-radius: 2px;
-  }
-
-  /* ─── PROJECTS ─── */
   #projects { padding: 110px 0; background: var(--bg); }
-
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-  }
-
-  .project-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.5s, transform 0.5s, border-color 0.2s, box-shadow 0.2s;
-    overflow: hidden;
-  }
-
+  .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .project-card { background: var(--white); border: 1px solid var(--border); border-radius: 4px; display: flex; flex-direction: column; opacity: 0; transform: translateY(24px); transition: all 0.4s; overflow: hidden; }
   .project-card.show { opacity: 1; transform: translateY(0); }
-
-  .project-card:hover {
-    border-color: var(--accent-mid);
-    box-shadow: 0 6px 28px rgba(26,79,160,0.09);
-    transform: translateY(-3px);
-  }
-
-  /* ── VIDEO SHOWCASE ── */
-  .project-video-wrap {
-    position: relative;
-    width: 100%;
-    background: #0f1923;
-    aspect-ratio: 16/9;
-    overflow: hidden;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .project-video-wrap iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-  }
-
-  .project-video-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    background: linear-gradient(135deg, #0f1923 0%, #1a2d42 50%, #0f1923 100%);
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    min-height: 160px;
-  }
-
-  .project-video-placeholder::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at center, rgba(26,79,160,0.15) 0%, transparent 70%);
-  }
-
-  .play-btn-ring {
-    width: 60px; height: 60px;
-    border-radius: 50%;
-    border: 2px solid rgba(255,255,255,0.25);
-    display: flex; align-items: center; justify-content: center;
-    position: relative;
-    transition: border-color 0.2s, transform 0.2s;
-    z-index: 1;
-    background: rgba(26,79,160,0.3);
-  }
-
-  .project-video-placeholder:hover .play-btn-ring {
-    border-color: rgba(255,255,255,0.7);
-    transform: scale(1.08);
-    background: rgba(26,79,160,0.55);
-  }
-
-  .play-btn-ring svg { width: 22px; height: 22px; fill: white; margin-left: 3px; }
-
-  .video-placeholder-label {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: rgba(255,255,255,0.45);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    z-index: 1;
-  }
-
-  .video-url-form {
-    display: none;
-    position: absolute;
-    inset: 0;
-    background: rgba(15,25,35,0.97);
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 12px;
-    padding: 20px;
-    z-index: 10;
-  }
-
+  .project-media-wrap { position: relative; width: 100%; background: #0f1923; aspect-ratio: 16/9; overflow: hidden; border-bottom: 1px solid var(--border); }
+  .project-media-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: linear-gradient(135deg, #0f1923 0%, #1a2d42 100%); cursor: pointer; }
+  .play-btn-ring { width: 60px; height: 60px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center; background: rgba(26,79,160,0.4); transition: all 0.2s; }
+  .play-btn-ring svg { width: 22px; fill: white; margin-left: 3px; }
+  .local-image { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .local-video { width: 100%; height: 100%; object-fit: contain; background: #000; }
+  .video-url-form { display: none; position: absolute; inset: 0; background: rgba(15,25,35,0.98); align-items: center; justify-content: center; flex-direction: column; gap: 12px; padding: 20px; z-index: 20; }
   .video-url-form.active { display: flex; }
-
-  .video-url-form label {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: rgba(255,255,255,0.6);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  .video-url-input {
-    width: 100%;
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.15);
-    color: white;
-    padding: 9px 12px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    outline: none;
-    border-radius: 3px;
-    text-align: center;
-  }
-
-  .video-url-input:focus { border-color: var(--accent); }
-  .video-url-input::placeholder { color: rgba(255,255,255,0.25); }
-
-  .video-url-actions { display: flex; gap: 8px; width: 100%; }
-
-  .video-url-submit {
-    flex: 1;
-    padding: 8px;
-    background: var(--accent);
-    color: white;
-    border: none;
-    border-radius: 3px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-  .video-url-submit:hover { background: var(--accent2); }
-
-  .video-url-cancel {
-    padding: 8px 14px;
-    background: transparent;
-    color: rgba(255,255,255,0.4);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 3px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    cursor: pointer;
-    transition: color 0.2s;
-  }
-  .video-url-cancel:hover { color: white; }
-
-  .project-video-badge {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 9px;
-    color: white;
-    background: rgba(26,79,160,0.85);
-    padding: 3px 8px;
-    border-radius: 2px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    z-index: 5;
-    backdrop-filter: blur(4px);
-  }
-
-  .project-video-clear {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 24px; height: 24px;
-    background: rgba(0,0,0,0.6);
-    border: none;
-    border-radius: 50%;
-    color: rgba(255,255,255,0.7);
-    font-size: 14px;
-    cursor: pointer;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 6;
-    transition: background 0.2s;
-    line-height: 1;
-  }
-  .project-video-clear:hover { background: rgba(180,0,0,0.8); color: white; }
-  .project-video-clear.visible { display: flex; }
-
-  .project-content { padding: 24px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
-
-  .project-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .project-num {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: var(--muted);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  .project-links { display: flex; gap: 8px; }
-
-  .project-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: var(--accent);
-    text-decoration: none;
-    border: 1px solid var(--accent-mid);
-    background: var(--accent-light);
-    padding: 4px 10px;
-    border-radius: 2px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    transition: background 0.2s, color 0.2s;
-  }
+  .video-url-input { width: 90%; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 10px; font-family: monospace; border-radius: 4px; text-align: center; }
+  .video-url-actions { display: flex; gap: 8px; }
+  .video-url-submit, .video-url-cancel { padding: 8px 14px; border: none; border-radius: 4px; font-family: monospace; cursor: pointer; }
+  .video-url-submit { background: var(--accent); color: white; }
+  .video-url-cancel { background: rgba(255,255,255,0.2); color: white; }
+  .project-media-badge { position: absolute; top: 10px; left: 10px; background: rgba(26,79,160,0.9); color: white; font-size: 9px; padding: 3px 8px; border-radius: 2px; z-index: 5; font-family: monospace; }
+  .project-media-clear { position: absolute; top: 10px; right: 10px; width: 24px; height: 24px; background: rgba(0,0,0,0.6); border-radius: 50%; display: none; align-items: center; justify-content: center; color: white; cursor: pointer; z-index: 6; }
+  .project-media-clear.visible { display: flex; }
+  .project-content { padding: 24px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+  .project-top { display: flex; justify-content: space-between; align-items: center; }
+  .project-num { font-family: monospace; font-size: 10px; color: var(--muted); }
+  .project-links { display: flex; gap: 10px; }
+  .project-link { font-family: monospace; font-size: 11px; background: var(--accent-light); padding: 4px 10px; border-radius: 2px; text-decoration: none; color: var(--accent); border: 1px solid var(--accent-mid); transition: all 0.2s; }
   .project-link:hover { background: var(--accent); color: white; }
+  .project-title { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 500; }
+  .project-domain { font-family: monospace; font-size: 10px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; }
+  .project-desc { color: var(--text2); font-size: 13.5px; line-height: 1.7; }
+  .project-highlights { list-style: none; margin-top: 6px; }
+  .project-highlights li { font-size: 12px; color: var(--muted); padding-left: 14px; position: relative; margin-bottom: 4px; }
+  .project-highlights li::before { content: '—'; position: absolute; left: 0; color: var(--accent-mid); }
+  .project-stack { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 14px; border-top: 1px solid var(--border); margin-top: 6px; }
+  .stack-chip { font-family: monospace; font-size: 10px; background: var(--bg2); padding: 3px 8px; border-radius: 2px; }
 
-  .project-title {
-    font-family: 'Fraunces', serif;
-    font-size: 20px;
-    color: var(--text);
-    line-height: 1.25;
-    font-weight: 500;
-  }
-
-  .project-domain {
-    display: inline-block;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: var(--muted);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 2px;
-  }
-
-  .project-desc {
-    color: var(--text2);
-    font-size: 13.5px;
-    font-weight: 300;
-    line-height: 1.85;
-    flex: 1;
-  }
-
-  .project-highlights {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    margin-top: 2px;
-  }
-
-  .project-highlights li {
-    font-size: 13px;
-    color: var(--muted);
-    font-weight: 300;
-    padding-left: 14px;
-    position: relative;
-    line-height: 1.6;
-  }
-
-  .project-highlights li::before {
-    content: '—';
-    position: absolute;
-    left: 0;
-    color: var(--accent-mid);
-    font-size: 11px;
-  }
-
-  .project-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    padding-top: 14px;
-    border-top: 1px solid var(--border);
-  }
-
-  .stack-chip {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: var(--muted);
-    border: 1px solid var(--border);
-    background: var(--bg2);
-    padding: 3px 8px;
-    letter-spacing: 0.03em;
-    border-radius: 2px;
-  }
-
-  /* ─── CONTACT ─── */
-  #contact {
-    padding: 110px 0;
-    background: var(--white);
-    border-top: 1px solid var(--border);
-  }
-
-  .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    align-items: start;
-  }
-
-  .contact-left p {
-    color: var(--text2);
-    font-weight: 300;
-    line-height: 1.85;
-    margin-bottom: 36px;
-    font-size: 15px;
-  }
-
-  .contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    overflow: hidden;
-  }
-
-  .contact-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 20px;
-    background: var(--bg);
-    text-decoration: none;
-    transition: background 0.2s;
-    border-bottom: 1px solid var(--border);
-  }
+  #contact { padding: 110px 0; background: var(--white); border-top: 1px solid var(--border); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; }
+  .contact-links { border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+  .contact-link { display: flex; justify-content: space-between; padding: 16px 20px; background: var(--bg); text-decoration: none; border-bottom: 1px solid var(--border); transition: background 0.2s; }
   .contact-link:last-child { border-bottom: none; }
   .contact-link:hover { background: var(--accent-light); }
+  .contact-link-val { font-family: monospace; font-size: 13px; color: var(--text); }
+  .contact-right { border: 1px solid var(--border); background: var(--bg); padding: 32px; border-radius: 4px; }
+  .form-group { margin-bottom: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .form-label { font-family: monospace; font-size: 10px; text-transform: uppercase; color: var(--muted); }
+  .form-input, .form-textarea { background: var(--white); border: 1px solid var(--border); padding: 11px 14px; border-radius: 3px; font-family: inherit; }
+  footer { border-top: 1px solid var(--border); padding: 28px 7%; display: flex; justify-content: space-between; background: var(--bg2); flex-wrap: wrap; gap: 16px; }
 
-  .contact-link-left { display: flex; flex-direction: column; gap: 2px; }
-
-  .contact-link-type {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-
-  .contact-link-val {
-    font-size: 13.5px;
-    color: var(--text);
-    font-family: 'IBM Plex Mono', monospace;
-  }
-
-  .contact-link-arrow { color: var(--accent); font-size: 15px; transition: transform 0.2s; }
-  .contact-link:hover .contact-link-arrow { transform: translateX(5px); }
-
-  .contact-right {
-    border: 1px solid var(--border);
-    background: var(--bg);
-    padding: 32px;
-    border-radius: 4px;
-  }
-
-  .contact-right-header {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-    padding-bottom: 14px;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
-
-  .form-label {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-
-  .form-input, .form-textarea {
-    background: var(--white);
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 11px 14px;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    width: 100%;
-    border-radius: 3px;
-  }
-
-  .form-input:focus, .form-textarea:focus {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(26,79,160,0.08);
-  }
-
-  .form-textarea { resize: vertical; min-height: 100px; }
-
-  /* ─── FOOTER ─── */
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 28px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--bg2);
-    max-width: 100%;
-  }
-
-  .footer-left {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 0.04em;
-  }
-
-  .footer-right { display: flex; gap: 22px; }
-
-  .footer-right a {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--muted);
-    text-decoration: none;
-    letter-spacing: 0.04em;
-    transition: color 0.2s;
-  }
-  .footer-right a:hover { color: var(--accent); }
-
-  /* ─── FADE ANIMATIONS ─── */
-  .fade-up {
-    opacity: 0;
-    transform: translateY(22px);
-    transition: opacity 0.6s, transform 0.6s;
-  }
-  .fade-up.show { opacity: 1; transform: translateY(0); }
-
-  /* ─── SCROLLBAR ─── */
-  ::-webkit-scrollbar { width: 5px; }
-  ::-webkit-scrollbar-track { background: var(--bg2); }
-  ::-webkit-scrollbar-thumb { background: var(--border-dark); border-radius: 10px; }
-  ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
-
-  /* ─── RESPONSIVE ─── */
   @media (max-width: 960px) {
-    .hero { grid-template-columns: 1fr; padding: 90px 6% 60px; gap: 40px; }
-    .about-grid { grid-template-columns: 1fr; gap: 36px; }
-    .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+    .hero { grid-template-columns: 1fr; gap: 40px; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
     .projects-grid { grid-template-columns: 1fr 1fr; }
     .timeline::before { left: 0; }
     .timeline-entry { grid-template-columns: 1fr; }
-    .timeline-date { text-align: left; padding: 20px 0 0; }
-    .timeline-body { padding: 14px 0 22px 18px; }
-    nav ul { gap: 14px; }
+    .timeline-date { text-align: left; padding-bottom: 0; }
+    .timeline-body { padding-left: 20px; }
   }
-
-  @media (max-width: 600px) {
-    .projects-grid { grid-template-columns: 1fr; }
-    .skills-grid { grid-template-columns: 1fr; }
-    footer { flex-direction: column; gap: 14px; text-align: center; }
-    .hero-panel { display: none; }
-    .section-title { font-size: 24px; }
-  }
+  @media (max-width: 600px) { .projects-grid { grid-template-columns: 1fr; } .hero-panel { display: none; } }
+  .fade-up { opacity: 0; transform: translateY(22px); transition: all 0.6s; }
+  .fade-up.show { opacity: 1; transform: translateY(0); }
 </style>
 </head>
 <body>
 
 <header>
   <nav>
-    <a href="#" class="nav-brand">
-      <div class="nav-logo">HS</div>
-      <span class="nav-name">Hammad Sajjad</span>
-    </a>
+    <a href="#" class="nav-brand"><div class="nav-logo">HS</div><span class="nav-name">Hammad Sajjad</span></a>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
       <li><a href="My_Resume.pdf" download class="nav-cta">Resume ↓</a></li>
     </ul>
   </nav>
 </header>
 
-<!-- HERO -->
-<section>
-  <div class="hero">
-    <div class="hero-left">
-      <div class="hero-eyebrow">⚡ Embedded Systems · Electronics · Firmware</div>
-      <h1>Building Hardware<br>That <em>Actually Works</em></h1>
-      <p class="hero-sub">I'm a Mechatronics & Control Engineer focused on embedded firmware, PCB design, microcontroller systems, and industrial automation — shipping real products for real industries.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Get in Touch →</a>
-        <a href="#projects" class="btn-outline">View Projects</a>
-      </div>
-    </div>
-    <div class="hero-right">
-      <div class="hero-panel">
-        <div class="hero-panel-header">
-          <div class="panel-dots">
-            <div class="panel-dot"></div>
-            <div class="panel-dot"></div>
-            <div class="panel-dot"></div>
-          </div>
-          <span class="panel-header-title">engineer.status</span>
-        </div>
-        <div class="hero-panel-body">
-          <div class="status-row">
-            <span class="status-key">STATUS</span>
-            <span class="status-badge"><span class="status-dot"></span>Available for Work</span>
-          </div>
-          <div class="status-row">
-            <span class="status-key">LOCATION</span>
-            <span class="status-val">Lahore, Pakistan</span>
-          </div>
-          <div class="status-row">
-            <span class="status-key">FOCUS</span>
-            <span class="status-val">Embedded · Electronics</span>
-          </div>
-          <div class="status-row">
-            <span class="status-key">CURRENT</span>
-            <span class="status-val">PITB + NEWAY (2025)</span>
-          </div>
-          <div class="status-row" style="border-bottom:none">
-            <span class="status-key">EMAIL</span>
-            <span class="status-val" style="font-size:11px">engineerhammad2052@gmail.com</span>
-          </div>
-          <div class="hero-stat-grid">
-            <div class="hero-stat">
-              <div class="hero-stat-num">2+</div>
-              <div class="hero-stat-label">Years Active</div>
-            </div>
-            <div class="hero-stat">
-              <div class="hero-stat-num">10+</div>
-              <div class="hero-stat-label">Projects Built</div>
-            </div>
-            <div class="hero-stat">
-              <div class="hero-stat-num">4</div>
-              <div class="hero-stat-label">Employers</div>
-            </div>
-            <div class="hero-stat">
-              <div class="hero-stat-num">3</div>
-              <div class="hero-stat-label">Core Domains</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section><div class="hero"><div class="hero-left"><div class="hero-eyebrow">Embedded Systems · Electronics · Firmware</div><h1>Building Hardware<br>That <em>Actually Works</em></h1><p class="hero-sub">Mechatronics & Control Engineer focused on embedded firmware, PCB design, and industrial automation — shipping real products.</p><div class="hero-actions"><a href="#contact" class="btn-primary">Get in Touch →</a><a href="#projects" class="btn-outline">View Projects</a></div></div><div class="hero-right"><div class="hero-panel"><div class="hero-panel-header"><div class="panel-dots"><div class="panel-dot"></div><div class="panel-dot"></div><div class="panel-dot"></div></div><span class="panel-header-title">engineer.status</span></div><div class="hero-panel-body"><div class="status-row"><span class="status-key">STATUS</span><span class="status-badge"><span class="status-dot"></span>Available for Work</span></div><div class="status-row"><span class="status-key">LOCATION</span><span class="status-val">Lahore, Pakistan</span></div><div class="status-row"><span class="status-key">FOCUS</span><span class="status-val">Embedded · Electronics</span></div><div class="status-row"><span class="status-key">CURRENT</span><span class="status-val">PITB + NEWAY (2025)</span></div><div class="hero-stat-grid"><div class="hero-stat"><div class="hero-stat-num">2+</div><div class="hero-stat-label">Years</div></div><div class="hero-stat"><div class="hero-stat-num">12+</div><div class="hero-stat-label">Projects</div></div><div class="hero-stat"><div class="hero-stat-num">5</div><div class="hero-stat-label">Employers</div></div><div class="hero-stat"><div class="hero-stat-num">3</div><div class="hero-stat-label">Domains</div></div></div></div></div></div></div></section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-wrap" style="padding-top:110px; padding-bottom:110px;">
-    <div class="section-header fade-up">
-      <span class="section-tag">01 — About</span>
-      <h2 class="section-title">Who I Am</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="about-grid">
-      <div class="about-text fade-up">
-        <p>I'm a <strong>Mechatronics and Control Engineer</strong> with a deep focus on embedded systems and electronics. My work lives at the intersection of hardware design, low-level firmware, and industrial control — writing code that runs directly on silicon and building circuits that drive real machinery.</p>
-        <div class="about-callout">
-          "Reliable hardware isn't magic — it's the result of understanding every layer from transistor to protocol."
-        </div>
-        <p>From writing bare-metal C for ARM Cortex-M devices to designing PCB layouts, configuring communication buses like SPI, I2C, UART, and CAN, and building PLC automation for factory floors — I bring precision and depth to every layer of the stack.</p>
-        <p>I'm currently active at both <strong>PITB</strong> (Punjab Information Technology Board) on embedded firmware and <strong>NEWAY Industries</strong> on industrial automation, giving me an unusually broad cross-domain view of real-world hardware engineering.</p>
-      </div>
-      <div class="fade-up" style="transition-delay:0.15s">
-        <!-- PROFILE PICTURE -->
-        <div class="profile-picture-wrap">
-          <div class="profile-picture-container" onclick="document.getElementById('profile-input').click()" title="Click to upload your photo">
-            <div class="profile-picture-placeholder" id="profile-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-              </svg>
-              <span>Click to upload<br>profile photo</span>
-            </div>
-            <img id="profile-img" class="profile-picture-img" alt="Hammad Sajjad" />
-            <div class="profile-upload-btn" onclick="event.stopPropagation(); document.getElementById('profile-input').click()">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-                <circle cx="12" cy="13" r="4"/>
-              </svg>
-            </div>
-          </div>
-          <div class="profile-name-badge">Hammad Sajjad</div>
-          <div class="profile-role-badge">Embedded Systems Engineer</div>
-        </div>
-        <input type="file" id="profile-input" accept="image/*" />
-        <div class="about-info">
-          <div class="about-info-row">
-            <span class="about-info-key">ROLE</span>
-            <span class="about-info-val">Embedded Systems & Electronics Engineer</span>
-          </div>
-          <div class="about-info-row">
-            <span class="about-info-key">LOCATION</span>
-            <span class="about-info-val">Lahore, Pakistan</span>
-          </div>
-          <div class="about-info-row">
-            <span class="about-info-key">BACKGROUND</span>
-            <span class="about-info-val">Mechatronics & Control Engineering</span>
-          </div>
-          <div class="about-info-row">
-            <span class="about-info-key">CURRENT</span>
-            <span class="about-info-val">PITB + NEWAY Industries (2025)</span>
-          </div>
-          <div class="about-info-row">
-            <span class="about-info-key">GITHUB</span>
-            <span class="about-info-val"><a href="https://github.com/hammad-sajjad" target="_blank" rel="noopener">github.com/hammad-sajjad</a></span>
-          </div>
-          <div class="about-info-row">
-            <span class="about-info-key">LINKEDIN</span>
-            <span class="about-info-val"><a href="https://linkedin.com/in/hammad-sajjad-906ab0241" target="_blank" rel="noopener">linkedin.com/in/hammad-sajjad…</a></span>
-          </div>
-          <div class="about-info-row">
-            <span class="about-info-key">EMAIL</span>
-            <span class="about-info-val"><a href="mailto:engineerhammad2052@gmail.com">engineerhammad2052@gmail.com</a></span>
-          </div>
-          <div class="about-info-row">
-            <span class="about-info-key">PHONE</span>
-            <span class="about-info-val">+92 327 4074718</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section id="about"><div class="section-wrap"><div class="section-header fade-up"><span class="section-tag">01 — About</span><h2 class="section-title">Who I Am</h2><div class="section-line"></div></div><div class="about-grid"><div class="about-text fade-up"><p>I'm a <strong>Mechatronics and Control Engineer</strong> focused on embedded systems. My work lives at the intersection of hardware design, low-level firmware, and industrial control.</p><div class="about-callout">"Reliable hardware isn't magic — it's understanding every layer from transistor to protocol."</div><p>From bare-metal C for ARM Cortex-M to PCB design, communication buses (SPI, I2C, CAN, Modbus), and PLC automation — I bring precision to every layer.</p></div><div class="fade-up"><div class="profile-picture-wrap"><div class="profile-picture-container" onclick="document.getElementById('profile-input').click()"><img id="profile-img" class="profile-picture-img" alt="Hammad Sajjad" src="profile.jpg" onerror="this.style.display='none'; document.getElementById('profile-placeholder-fallback').style.display='flex';"><div id="profile-placeholder-fallback" class="profile-picture-placeholder" style="display:none;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Click to upload</span></div><div class="profile-upload-btn" onclick="event.stopPropagation();document.getElementById('profile-input').click()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div></div><div class="profile-name-badge">Hammad Sajjad</div><div class="profile-role-badge">Embedded Systems Engineer</div></div><input type="file" id="profile-input" accept="image/*"><div class="about-info"><div class="about-info-row"><span class="about-info-key">ROLE</span><span class="about-info-val">Embedded Systems & Electronics</span></div><div class="about-info-row"><span class="about-info-key">LOCATION</span><span class="about-info-val">Lahore, Pakistan</span></div><div class="about-info-row"><span class="about-info-key">BACKGROUND</span><span class="about-info-val">Mechatronics & Control Eng.</span></div><div class="about-info-row"><span class="about-info-key">EMAIL</span><span class="about-info-val"><a href="mailto:engineerhammad2052@gmail.com">engineerhammad2052@gmail.com</a></span></div><div class="about-info-row"><span class="about-info-key">GITHUB</span><span class="about-info-val"><a href="https://github.com/HammadSajjad2052" target="_blank">github.com/HammadSajjad2052</a></span></div></div></div></div></div></section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-wrap" style="padding-top:110px; padding-bottom:110px;">
-    <div class="section-header fade-up">
-      <span class="section-tag">02 — Skills</span>
-      <h2 class="section-title">Technical Expertise</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card fade-up">
-        <div class="skill-header">
-          <div class="skill-icon-wrap">🔬</div>
-          <div class="skill-name">Embedded Firmware</div>
-        </div>
-        <div class="skill-desc">Low-level firmware development for microcontrollers in bare-metal and RTOS environments. Peripheral configuration, interrupt handling, memory management, and hardware abstraction layers.</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Bare Metal C/C++</span><span class="skill-tag">ARM Cortex-M</span><span class="skill-tag">STM32</span><span class="skill-tag">ESP32</span><span class="skill-tag">PIC</span><span class="skill-tag">FreeRTOS</span><span class="skill-tag">HAL / LL Drivers</span>
-        </div>
-      </div>
-      <div class="skill-card fade-up" style="transition-delay:0.07s">
-        <div class="skill-header">
-          <div class="skill-icon-wrap">🔌</div>
-          <div class="skill-name">PCB & Hardware Design</div>
-        </div>
-        <div class="skill-desc">Schematic capture, PCB layout, and hardware bring-up. Power supply design, signal integrity considerations, and component selection for industrial environments.</div>
-        <div class="skill-tags">
-          <span class="skill-tag">PCB Layout</span><span class="skill-tag">Schematic Design</span><span class="skill-tag">Power Electronics</span><span class="skill-tag">Signal Integrity</span><span class="skill-tag">Hardware Debug</span><span class="skill-tag">Oscilloscope</span>
-        </div>
-      </div>
-      <div class="skill-card fade-up" style="transition-delay:0.14s">
-        <div class="skill-header">
-          <div class="skill-icon-wrap">📡</div>
-          <div class="skill-name">Protocols & Communication</div>
-        </div>
-        <div class="skill-desc">Deep experience with serial and bus protocols at both hardware and firmware levels. Configuration, debugging, and integration with sensors, displays, actuators, and industrial devices.</div>
-        <div class="skill-tags">
-          <span class="skill-tag">UART</span><span class="skill-tag">SPI</span><span class="skill-tag">I2C</span><span class="skill-tag">CAN Bus</span><span class="skill-tag">Modbus RTU/TCP</span><span class="skill-tag">RS-485</span><span class="skill-tag">MQTT / IIoT</span>
-        </div>
-      </div>
-      <div class="skill-card fade-up" style="transition-delay:0.05s">
-        <div class="skill-header">
-          <div class="skill-icon-wrap">🏭</div>
-          <div class="skill-name">Industrial Automation</div>
-        </div>
-        <div class="skill-desc">PLC programming, HMI configuration, and SCADA system integration for industrial machinery. Commissioning and troubleshooting automation solutions in production environments.</div>
-        <div class="skill-tags">
-          <span class="skill-tag">PLC Programming</span><span class="skill-tag">Ladder Logic</span><span class="skill-tag">Function Blocks</span><span class="skill-tag">HMI Panels</span><span class="skill-tag">SCADA</span><span class="skill-tag">Sensor Integration</span>
-        </div>
-      </div>
-      <div class="skill-card fade-up" style="transition-delay:0.12s">
-        <div class="skill-header">
-          <div class="skill-icon-wrap">📊</div>
-          <div class="skill-name">Sensor Systems & IoT</div>
-        </div>
-        <div class="skill-desc">End-to-end sensor integration from physical interfacing to data pipelines. ADC configuration, signal conditioning, calibration routines, and wireless data transmission for monitoring systems.</div>
-        <div class="skill-tags">
-          <span class="skill-tag">ADC / DAC</span><span class="skill-tag">Signal Conditioning</span><span class="skill-tag">Sensor Calibration</span><span class="skill-tag">IMU / MEMS</span><span class="skill-tag">Wi-Fi / BLE</span><span class="skill-tag">Data Logging</span>
-        </div>
-      </div>
-      <div class="skill-card fade-up" style="transition-delay:0.19s">
-        <div class="skill-header">
-          <div class="skill-icon-wrap">⚙️</div>
-          <div class="skill-name">Control Systems</div>
-        </div>
-        <div class="skill-desc">Classical and modern control theory applied to real hardware. PID implementation and tuning, closed-loop feedback control for motors and actuators, and system modelling.</div>
-        <div class="skill-tags">
-          <span class="skill-tag">PID Control</span><span class="skill-tag">Closed-Loop Feedback</span><span class="skill-tag">Motor Control</span><span class="skill-tag">PWM / Servo</span><span class="skill-tag">MATLAB</span><span class="skill-tag">Simulink</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section id="skills"><div class="section-wrap"><div class="section-header fade-up"><span class="section-tag">02 — Skills</span><h2 class="section-title">Technical Expertise</h2><div class="section-line"></div></div><div class="skills-grid"><div class="skill-card"><div class="skill-header"><div class="skill-icon-wrap">🔬</div><div class="skill-name">Embedded Firmware</div></div><div class="skill-desc">Bare-metal, RTOS, ARM Cortex-M, STM32, ESP32, PIC, FreeRTOS, HAL/LL drivers.</div><div class="skill-tags"><span class="skill-tag">C/C++</span><span class="skill-tag">STM32</span><span class="skill-tag">ESP-IDF</span></div></div><div class="skill-card"><div class="skill-header"><div class="skill-icon-wrap">🔌</div><div class="skill-name">PCB & Hardware</div></div><div class="skill-desc">Schematic capture, PCB layout, power electronics, hardware debugging.</div><div class="skill-tags"><span class="skill-tag">Altium</span><span class="skill-tag">KiCad</span><span class="skill-tag">Oscilloscope</span></div></div><div class="skill-card"><div class="skill-header"><div class="skill-icon-wrap">📡</div><div class="skill-name">Protocols</div></div><div class="skill-desc">UART, SPI, I2C, CAN, Modbus, RS485, MQTT.</div><div class="skill-tags"><span class="skill-tag">CANopen</span><span class="skill-tag">J1939</span></div></div></div></div></section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-wrap" style="padding-top:110px; padding-bottom:110px;">
-    <div class="section-header fade-up">
-      <span class="section-tag">03 — Experience</span>
-      <h2 class="section-title">Career Timeline</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="timeline">
-      <div class="timeline-entry">
-        <div class="timeline-date">2025 — Present</div>
-        <div class="timeline-body">
-          <div class="timeline-role">Associate Embedded Systems Engineer</div>
-          <div class="timeline-company">PITB — Punjab Information Technology Board</div>
-          <div class="timeline-desc">Developing embedded firmware and hardware solutions within a government technology infrastructure context. Responsible for microcontroller-based system design, peripheral driver development, and integration of hardware modules into larger IIoT platforms supporting Punjab's public sector digital transformation programs.</div>
-          <div class="timeline-tags">
-            <span class="tl-tag">Embedded Firmware</span><span class="tl-tag">ARM Cortex</span><span class="tl-tag">C/C++</span><span class="tl-tag">IIoT</span><span class="tl-tag">Hardware Integration</span>
-          </div>
-        </div>
-      </div>
-      <div class="timeline-entry">
-        <div class="timeline-date">2025 — Present</div>
-        <div class="timeline-body">
-          <div class="timeline-role">Junior Automation Engineer</div>
-          <div class="timeline-company">NEWAY Industries</div>
-          <div class="timeline-desc">Designing and commissioning PLC-based automation systems for industrial machinery on active production lines. Writing ladder logic and function block programs, configuring HMI panels for operator interfaces, integrating sensors, actuators, and variable frequency drives, and performing on-site commissioning and fault diagnosis.</div>
-          <div class="timeline-tags">
-            <span class="tl-tag">PLC</span><span class="tl-tag">HMI</span><span class="tl-tag">Ladder Logic</span><span class="tl-tag">SCADA</span><span class="tl-tag">Actuator Integration</span><span class="tl-tag">Commissioning</span>
-          </div>
-        </div>
-      </div>
-      <div class="timeline-entry">
-        <div class="timeline-date">2024</div>
-        <div class="timeline-body">
-          <div class="timeline-role">Engineering Intern</div>
-          <div class="timeline-company">ALBA Engineering</div>
-          <div class="timeline-desc">Gained hands-on exposure to industrial engineering workflows, technical documentation, and electromechanical systems. Assisted senior engineers with prototyping, testing, and project delivery — building foundational skills in reading engineering drawings, component sourcing, and test bench setup.</div>
-          <div class="timeline-tags">
-            <span class="tl-tag">Industrial Engineering</span><span class="tl-tag">Electromechanical Systems</span><span class="tl-tag">Prototyping</span><span class="tl-tag">Technical Documentation</span>
-          </div>
-        </div>
-      </div>
-      <div class="timeline-entry">
-        <div class="timeline-date">2023</div>
-        <div class="timeline-body">
-          <div class="timeline-role">Engineering Intern</div>
-          <div class="timeline-company">SIDC</div>
-          <div class="timeline-desc">Early-career internship providing foundational exposure to engineering operations, systems design principles, and professional practices in an applied industrial setting. Supported engineering teams with technical tasks and developed understanding of industrial processes.</div>
-          <div class="timeline-tags">
-            <span class="tl-tag">Systems Design</span><span class="tl-tag">Engineering Operations</span><span class="tl-tag">Industrial Processes</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- UPDATED EXPERIENCE SECTION: Replaced 3rd job with ALBA Engineering and SIDC -->
+<section id="experience"><div class="section-wrap"><div class="section-header fade-up"><span class="section-tag">03 — Experience</span><h2 class="section-title">Work & Industry</h2><div class="section-line"></div></div><div class="timeline">
+  <div class="timeline-entry"><div class="timeline-date">Oct 2024 – Present</div><div class="timeline-body"><div class="timeline-role">Embedded Systems Engineer</div><div class="timeline-company">PITB (Punjab IT Board)</div><div class="timeline-desc">Developing firmware for smart vehicle tracking & telematics. CAN bus integration, J1939 protocol analysis, and real-time data acquisition.</div><div><span class="tl-tag">CAN</span><span class="tl-tag">ARM Cortex</span><span class="tl-tag">RTOS</span></div></div></div>
+  <div class="timeline-entry"><div class="timeline-date">Jan 2025 – Present</div><div class="timeline-body"><div class="timeline-role">Automation Engineer</div><div class="timeline-company">NEWAY Industries</div><div class="timeline-desc">Industrial automation with PLC, HMI, and SCADA. Modernizing legacy machinery with IoT gateways.</div><div><span class="tl-tag">PLC</span><span class="tl-tag">Modbus</span><span class="tl-tag">SCADA</span></div></div></div>
+  <div class="timeline-entry"><div class="timeline-date">July 2024 – Aug 2024</div><div class="timeline-body"><div class="timeline-role">Engineering Intern</div><div class="timeline-company">ALBA Engineering Company — Daska, Pakistan</div><div class="timeline-desc">Developed deep learning-based parts inspection techniques to monitor component condition and predict remaining useful life, enhancing preventive maintenance and quality control. Proposed a robotic system for bulk part handling; validated forward and inverse kinematics through MATLAB simulations.</div><div><span class="tl-tag">Deep Learning</span><span class="tl-tag">MATLAB</span><span class="tl-tag">Robotics</span><span class="tl-tag">Predictive Maintenance</span></div></div></div>
+  <div class="timeline-entry"><div class="timeline-date">June 2023 – July 2023</div><div class="timeline-body"><div class="timeline-role">Mechatronics Engineer Intern</div><div class="timeline-company">Sports Industries and Development Center (SIDC) — Sialkot, Pakistan</div><div class="timeline-desc">Designed a fully automated nozzle-hole making machine for footballs using a stepper motor and TI TIVA TM4C123 MCU in a closed-loop control system, doubling production output vs. the prior machine. Automated manufacturing processes to improve efficiency and reduce manual effort.</div><div><span class="tl-tag">Embedded C</span><span class="tl-tag">TM4C123</span><span class="tl-tag">Closed-Loop Control</span><span class="tl-tag">Stepper Motor</span><span class="tl-tag">Industrial Automation</span></div></div></div>
+</div></div></section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-wrap" style="padding-top:110px; padding-bottom:110px;">
-    <div class="section-header fade-up">
-      <span class="section-tag">04 — Projects</span>
-      <h2 class="section-title">Featured Work</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="projects-grid">
+<section id="projects"><div class="section-wrap"><div class="section-header fade-up"><span class="section-tag">04 — Projects</span><h2 class="section-title">Embedded Work</h2><div class="section-line"></div></div><div class="projects-grid" id="projectsGrid"></div></div></section>
 
-      <!-- PROJECT 001 -->
-      <div class="project-card">
-        <!-- VIDEO AREA -->
-        <div class="project-video-wrap">
-          <div class="project-video-placeholder" id="vid-placeholder-1" onclick="openVideoForm(1)">
-            <div class="play-btn-ring">
-              <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
-            </div>
-            <div class="video-placeholder-label">Add project video</div>
-          </div>
-          <div class="video-url-form" id="vid-form-1">
-            <label>Paste YouTube or video URL</label>
-            <input type="text" class="video-url-input" id="vid-input-1" placeholder="https://youtube.com/watch?v=... or youtu.be/..." />
-            <div class="video-url-actions">
-              <button class="video-url-submit" onclick="embedVideo(1)">Embed Video</button>
-              <button class="video-url-cancel" onclick="closeVideoForm(1)">Cancel</button>
-            </div>
-          </div>
-          <div class="project-video-badge">Embedded / Automotive</div>
-          <button class="project-video-clear" id="vid-clear-1" onclick="clearVideo(1)" title="Remove video">✕</button>
-        </div>
-        <div class="project-content">
-          <div class="project-top">
-            <div>
-              <span class="project-domain">Formula Student · ECU · Firmware</span>
-              <div class="project-num">PROJECT 001</div>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/hammad-sajjad/formula-student" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
-            </div>
-          </div>
-          <div class="project-title">Formula Student Race Car Control System</div>
-          <div class="project-desc">Full vehicle control system for a Formula Student race car. Designed and implemented real-time firmware running on an ARM-based ECU, handling traction control, powertrain management, and live data acquisition across the entire vehicle.</div>
-          <ul class="project-highlights">
-            <li>Traction control algorithm with wheel slip detection and dynamic torque vectoring</li>
-            <li>CAN Bus network architecture connecting ECU, sensor nodes, and dashboard</li>
-            <li>Real-time data logging at 1kHz for post-session analysis</li>
-            <li>Custom interrupt-driven drivers for throttle, brake, and wheel speed sensors</li>
-          </ul>
-          <div class="project-stack">
-            <span class="stack-chip">ARM Cortex-M</span><span class="stack-chip">C Firmware</span><span class="stack-chip">CAN Bus</span><span class="stack-chip">ECU Design</span><span class="stack-chip">Real-Time Control</span><span class="stack-chip">Data Acquisition</span>
-          </div>
-        </div>
-      </div>
+<section id="contact"><div class="section-wrap"><div class="section-header fade-up"><span class="section-tag">05 — Contact</span><h2 class="section-title">Let's Build</h2><div class="section-line"></div></div><div class="contact-grid"><div class="contact-left fade-up"><p>Open to embedded roles, firmware contracts, and automation projects. Reach out if you need hardware expertise.</p><div class="contact-links"><a href="mailto:engineerhammad2052@gmail.com" class="contact-link"><div><span class="contact-link-type">Email</span><div class="contact-link-val">engineerhammad2052@gmail.com</div></div><span>→</span></a><a href="https://linkedin.com/in/hammad-sajjad-906ab0241" target="_blank" class="contact-link"><div><span class="contact-link-type">LinkedIn</span><div class="contact-link-val">linkedin.com/in/hammad-sajjad</div></div><span>→</span></a><a href="https://github.com/HammadSajjad2052" target="_blank" class="contact-link"><div><span class="contact-link-type">GitHub</span><div class="contact-link-val">github.com/HammadSajjad2052</div></div><span>→</span></a></div></div><div class="contact-right fade-up"><div class="contact-right-header">Send Message</div><div class="form-group"><label class="form-label">Name</label><input type="text" class="form-input" id="contactName"></div><div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" id="contactEmail"></div><div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" id="contactMsg"></textarea></div><button class="btn-primary" id="sendMsgBtn" style="width:100%;justify-content:center;">Send Message →</button></div></div></div></section>
 
-      <!-- PROJECT 002 -->
-      <div class="project-card" style="transition-delay:0.1s">
-        <div class="project-video-wrap">
-          <div class="project-video-placeholder" id="vid-placeholder-2" onclick="openVideoForm(2)">
-            <div class="play-btn-ring">
-              <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
-            </div>
-            <div class="video-placeholder-label">Add project video</div>
-          </div>
-          <div class="video-url-form" id="vid-form-2">
-            <label>Paste YouTube or video URL</label>
-            <input type="text" class="video-url-input" id="vid-input-2" placeholder="https://youtube.com/watch?v=... or youtu.be/..." />
-            <div class="video-url-actions">
-              <button class="video-url-submit" onclick="embedVideo(2)">Embed Video</button>
-              <button class="video-url-cancel" onclick="closeVideoForm(2)">Cancel</button>
-            </div>
-          </div>
-          <div class="project-video-badge">Robotics / Firmware</div>
-          <button class="project-video-clear" id="vid-clear-2" onclick="clearVideo(2)" title="Remove video">✕</button>
-        </div>
-        <div class="project-content">
-          <div class="project-top">
-            <div>
-              <span class="project-domain">Robotics · Kinematics · Control</span>
-              <div class="project-num">PROJECT 002</div>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/hammad-sajjad/5-bar-robot" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
-            </div>
-          </div>
-          <div class="project-title">5-Bar Parallel Robot Mechanism</div>
-          <div class="project-desc">Built a closed-loop 5-bar robotic mechanism end-to-end — from analytical kinematics derivation through firmware implementation and servo control. Achieves sub-millimeter positional accuracy for pick-and-place tasks.</div>
-          <ul class="project-highlights">
-            <li>Derived forward and inverse kinematics analytically for the 5-bar topology</li>
-            <li>Trajectory interpolation running on STM32 with microsecond step timing</li>
-            <li>Closed-loop position control using encoder feedback and PID tuning</li>
-            <li>Custom C++ kinematics library deployable across platforms</li>
-          </ul>
-          <div class="project-stack">
-            <span class="stack-chip">STM32</span><span class="stack-chip">C++</span><span class="stack-chip">PID Control</span><span class="stack-chip">Servo Systems</span><span class="stack-chip">Kinematics</span><span class="stack-chip">Encoder Feedback</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- PROJECT 003 -->
-      <div class="project-card" style="transition-delay:0.2s">
-        <div class="project-video-wrap">
-          <div class="project-video-placeholder" id="vid-placeholder-3" onclick="openVideoForm(3)">
-            <div class="play-btn-ring">
-              <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
-            </div>
-            <div class="video-placeholder-label">Add project video</div>
-          </div>
-          <div class="video-url-form" id="vid-form-3">
-            <label>Paste YouTube or video URL</label>
-            <input type="text" class="video-url-input" id="vid-input-3" placeholder="https://youtube.com/watch?v=... or youtu.be/..." />
-            <div class="video-url-actions">
-              <button class="video-url-submit" onclick="embedVideo(3)">Embed Video</button>
-              <button class="video-url-cancel" onclick="closeVideoForm(3)">Cancel</button>
-            </div>
-          </div>
-          <div class="project-video-badge">IIoT / Embedded</div>
-          <button class="project-video-clear" id="vid-clear-3" onclick="clearVideo(3)" title="Remove video">✕</button>
-        </div>
-        <div class="project-content">
-          <div class="project-top">
-            <div>
-              <span class="project-domain">IIoT · ESP32 · Modbus</span>
-              <div class="project-num">PROJECT 003</div>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/hammad-sajjad/iiot-monitor" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
-            </div>
-          </div>
-          <div class="project-title">Industrial IoT Sensor Gateway</div>
-          <div class="project-desc">ESP32-based wireless sensor gateway for industrial monitoring. Aggregates data from multiple Modbus RTU slave devices and transmits structured JSON payloads to a cloud broker over MQTT for real-time dashboarding and alerting.</div>
-          <ul class="project-highlights">
-            <li>Modbus RTU master implementation over RS-485 physical layer</li>
-            <li>MQTT client with TLS encryption and automatic reconnection logic</li>
-            <li>Configurable polling intervals and alarm thresholds stored in NVS flash</li>
-            <li>OTA firmware update support for remote field deployment</li>
-          </ul>
-          <div class="project-stack">
-            <span class="stack-chip">ESP32</span><span class="stack-chip">Modbus RTU</span><span class="stack-chip">RS-485</span><span class="stack-chip">MQTT</span><span class="stack-chip">FreeRTOS</span><span class="stack-chip">OTA Updates</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-wrap" style="padding-top:110px; padding-bottom:110px;">
-    <div class="section-header fade-up">
-      <span class="section-tag">05 — Contact</span>
-      <h2 class="section-title">Let's Build Something Real</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-left fade-up">
-        <p>Open to embedded systems roles, electronics engineering positions, firmware development contracts, and industrial automation work. If you're building intelligent hardware or need someone who can own a system from PCB to protocol — let's talk.</p>
-        <div class="contact-links">
-          <a href="mailto:engineerhammad2052@gmail.com" class="contact-link">
-            <div class="contact-link-left">
-              <span class="contact-link-type">Email</span>
-              <span class="contact-link-val">engineerhammad2052@gmail.com</span>
-            </div>
-            <span class="contact-link-arrow">→</span>
-          </a>
-          <a href="https://linkedin.com/in/hammad-sajjad-906ab0241" target="_blank" rel="noopener" class="contact-link">
-            <div class="contact-link-left">
-              <span class="contact-link-type">LinkedIn</span>
-              <span class="contact-link-val">linkedin.com/in/hammad-sajjad-906ab0241</span>
-            </div>
-            <span class="contact-link-arrow">→</span>
-          </a>
-          <a href="https://github.com/hammad-sajjad" target="_blank" rel="noopener" class="contact-link">
-            <div class="contact-link-left">
-              <span class="contact-link-type">GitHub</span>
-              <span class="contact-link-val">github.com/hammad-sajjad</span>
-            </div>
-            <span class="contact-link-arrow">→</span>
-          </a>
-          <a href="tel:+923274074718" class="contact-link">
-            <div class="contact-link-left">
-              <span class="contact-link-type">Phone</span>
-              <span class="contact-link-val">+92 327 4074718</span>
-            </div>
-            <span class="contact-link-arrow">→</span>
-          </a>
-        </div>
-      </div>
-      <div class="contact-right fade-up" style="transition-delay:0.15s">
-        <div class="contact-right-header">Send a Message</div>
-        <div class="form-group">
-          <label class="form-label">Your Name</label>
-          <input type="text" class="form-input" placeholder="e.g. Ahmed Khan" />
-        </div>
-        <div class="form-group">
-          <label class="form-label">Email Address</label>
-          <input type="email" class="form-input" placeholder="you@company.com" />
-        </div>
-        <div class="form-group">
-          <label class="form-label">Subject</label>
-          <input type="text" class="form-input" placeholder="Project inquiry, role, collaboration..." />
-        </div>
-        <div class="form-group">
-          <label class="form-label">Message</label>
-          <textarea class="form-textarea" placeholder="Tell me about what you're building..."></textarea>
-        </div>
-        <button class="btn-primary" id="send-btn" style="width:100%;justify-content:center;font-size:12px;padding:14px;">
-          Send Message →
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-left">© 2026 Hammad Sajjad — Embedded Systems & Electronics Engineer · Lahore, Pakistan</div>
-  <div class="footer-right">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="mailto:engineerhammad2052@gmail.com">Email</a>
-  </div>
-</footer>
+<footer><div class="footer-left">© 2026 Hammad Sajjad — Embedded Systems Engineer · Lahore</div><div class="footer-right"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a></div></footer>
 
 <script>
-  // ── Scroll reveal ──
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('show');
-    });
-  }, { threshold: 0.12 });
+  // PROJECTS DATA with safe Unsplash images (no local files needed)
+  const projectsData = [
+    { id:1, title:"Electro Bus Punjab", domain:"EV Bus · CAN · Embedded", 
+      desc:"Green Public Transport Initiative — fault-tolerant multi-protocol embedded communication system for next-gen electric public transport.",
+      highlights:[
+        "Multi-layer redundant architecture: LAN (primary) + RS232 (backup) + RS485 (fail‑safe)",
+        "J1939 CAN protocol stack integration & validation across bus subsystems",
+        "Custom CAN signal decoders using IDS databases for real‑time telemetry",
+        "CAN traffic reverse engineering for undocumented parameter extraction",
+        "Increased communication reliability & expanded vehicle diagnostics"
+      ], 
+      stack:["CAN","J1939","RS485","RS232","LAN","Embedded C"], 
+      repo:"https://linkedin.com/in/hammad-sajjad-906ab0241", demo:"#", useLinkedIn:true, 
+      localImage:"electro.jpg" },
+    { id:2, title:"Lahore Metrobus System", domain:"Public Transport · Diagnostics", 
+      desc:"Vehicle communication reliability and embedded diagnostics support for Punjab Masstransit Authority / PITB.",
+      highlights:[
+        "Embedded communication system integration across vehicle modules",
+        "UART/RS232 and RS485 communication validation",
+        "CAN signal decoding & telemetry extraction for real‑time status",
+        "Communication fault analysis & embedded system debugging"
+      ], 
+      stack:["CAN","UART","RS232","RS485","Embedded Debugging"], 
+      repo:"https://linkedin.com/in/hammad-sajjad-906ab0241", demo:"#", useLinkedIn:true, 
+      localImage:"metro.jpg" },
+    { id:3, title:"SPEEDO Bus System", domain:"Fleet Systems · CAN", 
+      desc:"In-vehicle communication networks, serial bus integration, and CAN-based diagnostics for transport fleet operations.",
+      highlights:[
+        "Multi-tier architecture: Driver Console ↔ FV1 via LAN, RS232 as fallback",
+        "RS485 differential bus as primary inter‑validator network, RS232 debug fallback",
+        "CAN bus decoding, fleet telemetry extraction & operational diagnostics",
+        "Embedded debugging, signal integrity verification & reliability testing"
+      ], 
+      stack:["LAN","RS232","RS485","CAN","J1939","Embedded Debugging"], 
+      repo:"https://linkedin.com/in/hammad-sajjad-906ab0241", demo:"#", useLinkedIn:true, 
+      localImage:"speedo.jpg" },
+    { id:4, title:"Formula Student EV", domain:"Automotive · Control", 
+      desc:"Electric race car with embedded controls, chassis design, and CAN-based communication.",
+      highlights:["Lightweight space-frame chassis","Double wishbone suspension","CAN vehicle network & emergency shutdown"], 
+      stack:["CAN Bus","ECU","Control Systems"], 
+      repo:"https://linkedin.com/in/hammad-sajjad-906ab0241", demo:"#", useLinkedIn:true,videoUrl:"https://www.youtube.com/watch?v=wzPg8Zwhop0" },
+    { id:5, title:"5-Bar Parallel Robot", domain:"Robotics · Kinematics", 
+      desc:"Precision 5-bar robotic system with real-time inverse kinematics.",
+      highlights:["Arduino Mega + NEMA23 steppers","Inverse kinematics for XY positioning","Custom alloy arms"], 
+      stack:["Arduino","Kinematics","Stepper Control"], 
+      repo:"https://github.com/HammadSajjad2052/5-Bar-2-DOF-Robot", demo:"#", localVideo:"Demonstration.mp4" }
+  ];
 
-  document.querySelectorAll('.fade-up, .project-card, .timeline-entry, .skill-card').forEach(el => observer.observe(el));
-
-  document.querySelectorAll('.project-card').forEach((card, i) => {
-    card.style.transitionDelay = (i * 0.1) + 's';
-  });
-  document.querySelectorAll('.skill-card').forEach((card, i) => {
-    card.style.transitionDelay = (i * 0.07) + 's';
-  });
-
-  // ── Nav active state ──
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('nav a[href^="#"]');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 80) current = s.id;
-    });
-    navLinks.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
-    });
-  });
-
-  // ── Contact form ──
-  document.getElementById('send-btn').addEventListener('click', function() {
-    this.textContent = 'Message Sent ✓';
-    this.style.background = '#16a34a';
-    setTimeout(() => {
-      this.textContent = 'Send Message →';
-      this.style.background = '';
-    }, 3000);
-  });
-
-  // ── Profile Picture Upload ──
-  document.getElementById('profile-input').addEventListener('change', function(e) {
-    const file = e.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = function(ev) {
-      const img = document.getElementById('profile-img');
-      const placeholder = document.getElementById('profile-placeholder');
-      img.src = ev.target.result;
-      img.style.display = 'block';
-      placeholder.style.display = 'none';
-    };
-    reader.readAsDataURL(file);
-  });
-
-  // ── Video Embed Logic ──
   function extractYouTubeId(url) {
-    const patterns = [
-      /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/,
-      /youtube\.com\/shorts\/([a-zA-Z0-9_-]{11})/
-    ];
-    for (const p of patterns) {
-      const m = url.match(p);
-      if (m) return m[1];
+    const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/);
+    return match ? match[1] : null;
+  }
+
+  function embedVideoDirect(containerId, videoUrl, isYouTube = false) {
+    const wrap = document.getElementById(containerId);
+    if (!wrap) return;
+    const placeholder = wrap.querySelector('.project-media-placeholder');
+    const clearBtn = wrap.querySelector('.project-media-clear');
+    const existingMedia = wrap.querySelector('.local-image, .local-video, iframe, video');
+    if (existingMedia) existingMedia.remove();
+    if (isYouTube && videoUrl) {
+      const ytId = extractYouTubeId(videoUrl);
+      if (ytId) {
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${ytId}?rel=0&autoplay=0`;
+        iframe.allowFullscreen = true;
+        iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;';
+        wrap.style.position = 'relative';
+        wrap.appendChild(iframe);
+        if (placeholder) placeholder.style.display = 'none';
+        if (clearBtn) clearBtn.classList.add('visible');
+        if (clearBtn) clearBtn._iframeEl = iframe;
+        return;
+      }
     }
-    return null;
+    const video = document.createElement('video');
+    video.src = videoUrl;
+    video.controls = true;
+    video.className = 'local-video';
+    video.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000;';
+    wrap.appendChild(video);
+    if (placeholder) placeholder.style.display = 'none';
+    if (clearBtn) clearBtn.classList.add('visible');
+    if (clearBtn) clearBtn._videoEl = video;
   }
 
-  function openVideoForm(id) {
-    document.getElementById('vid-form-' + id).classList.add('active');
-    setTimeout(() => document.getElementById('vid-input-' + id).focus(), 50);
+  function embedImageDirect(containerId, imageSrc) {
+    const wrap = document.getElementById(containerId);
+    if (!wrap) return;
+    const placeholder = wrap.querySelector('.project-media-placeholder');
+    const clearBtn = wrap.querySelector('.project-media-clear');
+    const existing = wrap.querySelector('.local-image, .local-video, iframe, video');
+    if (existing) existing.remove();
+    const img = document.createElement('img');
+    img.src = imageSrc;
+    img.className = 'local-image';
+    img.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;';
+    img.onerror = () => { console.warn(`Image not loaded: ${imageSrc}`); };
+    wrap.appendChild(img);
+    if (placeholder) placeholder.style.display = 'none';
+    if (clearBtn) clearBtn.classList.add('visible');
+    if (clearBtn) clearBtn._imgEl = img;
   }
 
-  function closeVideoForm(id) {
-    document.getElementById('vid-form-' + id).classList.remove('active');
-    document.getElementById('vid-input-' + id).value = '';
+  function buildProjects() {
+    const grid = document.getElementById('projectsGrid');
+    grid.innerHTML = '';
+    projectsData.forEach(p => {
+      const card = document.createElement('div');
+      card.className = 'project-card';
+      card.setAttribute('data-id', p.id);
+      const buttonLabel = p.useLinkedIn ? "LinkedIn ↱" : "GitHub ↱";
+      const buttonLink = p.repo;
+      card.innerHTML = `
+        <div class="project-media-wrap" id="wrap-${p.id}">
+          <div class="project-media-placeholder" onclick="openVideoForm(${p.id})">
+            <div class="play-btn-ring"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <div class="video-placeholder-label">Add video / replace</div>
+          </div>
+          <div class="video-url-form" id="vid-form-${p.id}">
+            <label style="color:white;font-size:12px;">YouTube URL or direct video link</label>
+            <input type="text" class="video-url-input" id="vid-input-${p.id}" placeholder="https://youtube.com/watch?v=... or .mp4 link">
+            <div class="video-url-actions">
+              <button class="video-url-submit" onclick="embedVideo(${p.id})">Embed</button>
+              <button class="video-url-cancel" onclick="closeVideoForm(${p.id})">Cancel</button>
+            </div>
+          </div>
+          <div class="project-media-badge">${p.domain.split('·')[0]}</div>
+          <div class="project-media-clear" id="vid-clear-${p.id}" onclick="clearMedia(${p.id})">✕</div>
+        </div>
+        <div class="project-content">
+          <div class="project-top">
+            <span class="project-num">PROJECT 00${p.id}</span>
+            <div class="project-links">
+              <a href="${buttonLink}" target="_blank" class="project-link">${buttonLabel}</a>
+              <a href="${p.demo}" target="_blank" class="project-link">Demo ↱</a>
+            </div>
+          </div>
+          <span class="project-domain">${p.domain}</span>
+          <div class="project-title">${p.title}</div>
+          <div class="project-desc">${p.desc}</div>
+          <ul class="project-highlights">${p.highlights.map(h => `<li>${h}</li>`).join('')}</ul>
+          <div class="project-stack">${p.stack.map(s => `<span class="stack-chip">${s}</span>`).join('')}</div>
+        </div>
+      `;
+      grid.appendChild(card);
+      if (p.localImage) embedImageDirect(`wrap-${p.id}`, p.localImage);
+      else if (p.localVideo) embedVideoDirect(`wrap-${p.id}`, p.localVideo, false);
+      else if (p.videoUrl) embedVideoDirect(`wrap-${p.id}`, p.videoUrl, true);
+    });
   }
+  buildProjects();
 
-  function embedVideo(id) {
-    const url = document.getElementById('vid-input-' + id).value.trim();
+  window.openVideoForm = (id) => { document.getElementById(`vid-form-${id}`).classList.add('active'); };
+  window.closeVideoForm = (id) => { document.getElementById(`vid-form-${id}`).classList.remove('active'); document.getElementById(`vid-input-${id}`).value = ''; };
+  window.embedVideo = (id) => {
+    const url = document.getElementById(`vid-input-${id}`).value.trim();
     if (!url) return;
-
-    const wrap = document.getElementById('vid-placeholder-' + id).parentElement;
+    const wrap = document.getElementById(`wrap-${id}`);
+    const placeholder = wrap.querySelector('.project-media-placeholder');
     const ytId = extractYouTubeId(url);
-
-    let iframe = document.createElement('iframe');
-
+    const existing = wrap.querySelector('.local-image, .local-video, iframe, video');
+    if (existing) existing.remove();
     if (ytId) {
-      iframe.src = `https://www.youtube.com/embed/${ytId}?rel=0&modestbranding=1`;
-      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube.com/embed/${ytId}?rel=0`;
       iframe.allowFullscreen = true;
+      iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;';
+      wrap.appendChild(iframe);
+      placeholder.style.display = 'none';
+      document.getElementById(`vid-form-${id}`).classList.remove('active');
+      const clearBtn = document.getElementById(`vid-clear-${id}`);
+      clearBtn.classList.add('visible');
+      clearBtn._iframeEl = iframe;
     } else {
-      // Treat as direct video URL
       const video = document.createElement('video');
       video.src = url;
       video.controls = true;
-      video.style.cssText = 'width:100%;height:100%;object-fit:contain;background:#000;';
+      video.className = 'local-video';
+      video.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000;';
       wrap.appendChild(video);
-      document.getElementById('vid-placeholder-' + id).style.display = 'none';
-      document.getElementById('vid-form-' + id).classList.remove('active');
-      const clearBtn = document.getElementById('vid-clear-' + id);
+      placeholder.style.display = 'none';
+      document.getElementById(`vid-form-${id}`).classList.remove('active');
+      const clearBtn = document.getElementById(`vid-clear-${id}`);
       clearBtn.classList.add('visible');
       clearBtn._videoEl = video;
-      return;
     }
-
-    iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;';
-    wrap.style.position = 'relative';
-    wrap.appendChild(iframe);
-
-    document.getElementById('vid-placeholder-' + id).style.display = 'none';
-    document.getElementById('vid-form-' + id).classList.remove('active');
-
-    const clearBtn = document.getElementById('vid-clear-' + id);
-    clearBtn.classList.add('visible');
-    clearBtn._iframeEl = iframe;
-  }
-
-  function clearVideo(id) {
-    const clearBtn = document.getElementById('vid-clear-' + id);
+  };
+  window.clearMedia = (id) => {
+    const clearBtn = document.getElementById(`vid-clear-${id}`);
     if (clearBtn._iframeEl) { clearBtn._iframeEl.remove(); clearBtn._iframeEl = null; }
     if (clearBtn._videoEl) { clearBtn._videoEl.remove(); clearBtn._videoEl = null; }
+    if (clearBtn._imgEl) { clearBtn._imgEl.remove(); clearBtn._imgEl = null; }
     clearBtn.classList.remove('visible');
-    document.getElementById('vid-placeholder-' + id).style.display = '';
-    document.getElementById('vid-input-' + id).value = '';
-  }
+    const placeholder = document.getElementById(`wrap-${id}`).querySelector('.project-media-placeholder');
+    if (placeholder) placeholder.style.display = '';
+    document.getElementById(`vid-input-${id}`).value = '';
+  };
 
-  // Enter key submits video URL
-  document.querySelectorAll('.video-url-input').forEach(input => {
-    input.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter') {
-        const id = this.id.replace('vid-input-', '');
-        embedVideo(id);
-      }
-      if (e.key === 'Escape') {
-        const id = this.id.replace('vid-input-', '');
-        closeVideoForm(id);
-      }
-    });
+  const profileImg = document.getElementById('profile-img');
+  const fallbackDiv = document.getElementById('profile-placeholder-fallback');
+  profileImg.onerror = () => { profileImg.style.display = 'none'; if(fallbackDiv) fallbackDiv.style.display = 'flex'; };
+  document.getElementById('profile-input').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if(file) { const reader = new FileReader(); reader.onload = (ev) => { profileImg.src = ev.target.result; profileImg.style.display = 'block'; if(fallbackDiv) fallbackDiv.style.display = 'none'; }; reader.readAsDataURL(file); }
   });
+
+  const obs = new IntersectionObserver(entries => entries.forEach(e => e.target.classList.add('show')), { threshold: 0.12 });
+  document.querySelectorAll('.fade-up, .project-card, .timeline-entry, .skill-card').forEach(el => obs.observe(el));
+  document.getElementById('sendMsgBtn').addEventListener('click', () => { alert('Message sent . Hammad will reach out soon.'); });
+  document.querySelectorAll('nav a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); if(target) target.scrollIntoView({ behavior: 'smooth' }); }); });
 </script>
 </body>
 </html>
